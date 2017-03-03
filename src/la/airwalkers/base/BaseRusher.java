@@ -1,5 +1,5 @@
-package Abstract;
-import Abstract.WebDriver.Driver;
+package la.airwalkers.base;
+import la.airwalkers.base.webdriver.Driver;
 import org.openqa.selenium.*;
 
 /**
