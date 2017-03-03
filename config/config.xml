@@ -1,0 +1,4 @@
+<config>
+	<route id="chromedriver">C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe</route>
+	<route id="firefox">E:\Common\Mozilla Firefox\firefox.exe</route>
+</config>
