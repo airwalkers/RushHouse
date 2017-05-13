@@ -15,20 +15,17 @@ public abstract class BaseRusher {
 
     public BaseRusher(String baseUrl) {
         this.baseUrl = baseUrl;
+    }
+
+    public void open() {
         driver = Driver.getChromeDriver();
+        driver.get(baseUrl);
     }
-
-    public List<House> getHouses(int start, int end) {
-        List<House> houses = read(start, end);
-        quit();
-        return houses;
-    }
-
-    public abstract List<House> read(int start, int end);
 
     public void quit() {
         driver.quit();
     }
+
 
     public static void main(String[] args) {
 //        BaseRusher rusher = new BaseRusher("http://su.58.com/sushizhongxin/ershoufang/0/pn1/");
